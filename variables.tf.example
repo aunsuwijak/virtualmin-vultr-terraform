@@ -1,0 +1,29 @@
+variable "ssh_private_key_path" {
+  default = "~/.ssh/id_rsa"
+}
+
+variable "vultr_api_key" {
+  default = "SECRET_API_KEY"
+}
+variable "vultr_plan" {
+  default = "vc2-1c-2gb"
+}
+variable "vultr_region" {
+  default = "sgp"
+}
+variable "vultr_os_id" {
+  default = "387" // Ubuntu 20.04
+}
+variable "vultr_label" {
+  default = "label"
+}
+variable "vultr_hostname" {
+  default = "hostname"
+}
+variable "vultr_ssh_key_ids" {
+  default = ["https://api.vultr.com/v1/sshkey/list -> v2_id"]
+}
+
+variable "virtualmin_hostname" {
+  default = "hostname"
+}
